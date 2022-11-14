@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:  border-box;
+
+}
+html{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+body{
+    background: url(./pics/pics/bg-body.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    padding-top: 50px;
+    padding-bottom: 300px;
+}
+
+header{
+    height: 360px;
+    background: url(./pics/pics/bg-header.jpg) center center;
+    position: relative;
+    top: 0px;
+}
+
+#container{
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+#navbar{
+    background-color: rgba(190,0,0,0.7);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+}
+#navbar ul{
+    list-style-type: none;
+}
+#navbar>ul>li{
+    float: left;
+    text-align: justify;
+    
+}
+#navbar ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+    text-transform: lowercase;
+}
+#navbar ul li a:hover {
+    background-color: rgba(17, 1, 1, 0.9);
+    color: white;
+}
+.sub{
+    position: relative;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    text-transform: lowercase;
+
+}
+.sub:hover .submenu{
+    display: block;
+    background-color: rgb(190,0,0);
+    color: white;
+}
+#navbar .sub::after{
+    position: absolute;
+    left: 80px;
+    top: 25px;
+    color: white;
+    content: "🢗";
+}
+#content{
+    background-color: white;
+    padding: 40px;
+}
+#content {
+    
+    
+    
+    line-height: 1.5;
+    font-size: 1rem;
+}
+#content h1{
+    padding: 0px 0px 20px 0px;
+}
+#content h2{
+    padding: 20PX 0PX;
+}
+#content p{
+    padding: 10px 0px;
+}
+.news::after, #navbar ul::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    font-size: 1em;
+    background-color: black;
+    color: white;
+    padding-top: 17px;
+
+}
+footer #ok{
+    padding: 5px 5px;
+    background-color: yellow;
+    color: black;
+    border-radius: 5px;
+    margin-left: 10px;
+}
